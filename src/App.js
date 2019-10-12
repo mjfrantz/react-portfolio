@@ -9,6 +9,7 @@ import Navigation from "./components/layouts/Navigation";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import About from "./components/About";
+import AddPortfolio from "./components/AddPortfolio";
 import { createGlobalStyle } from "styled-components";
 
 
@@ -28,9 +29,10 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/portfolio" component={Portfolio}/>
-          <Route exact path ="/skills" component={Skills}/>
-          <Route exact path ="/about" component={About}/>
-          <Route exact path ="/contact" component={Contact}/>
+          <Route exact path="/skills" component={Skills}/>
+          <Route exact path="/about" component={About}/>
+          <Route exact path="/contact" component={Contact}/>
+          <Route exact path="/portfolio/add" component={AddPortfolio}/>
         </Switch>
     </Router>
   );

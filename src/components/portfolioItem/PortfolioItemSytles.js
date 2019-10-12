@@ -16,4 +16,5 @@ export const PortfolioDescription = styled.div``;
 export const PortfolioSummary = styled.p``;
 export const PortfolioGithub = styled.a``;
 export const PortfolioWebsite = styled.a``;
-export const PortfolioImage = styled.img``;
+export const PortfolioImage = styled.img`
+width: 100%`;
