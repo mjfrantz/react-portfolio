@@ -61,7 +61,7 @@ const AddPortfolio = () => {
                 <input type="text" name='githubLink' value={formData.githubLink} placeholder="My Portfolio" onChange={handleChange}/>
                 <input type="text" name='websiteLink' value={formData.websiteLink} placeholder="My Portfolio" onChange={handleChange}/> 
                 <input type='file' name='image' onChange={handleFile}/>
-                {formData.image && (<img src={formData.image} alt ='portfolio image'></img>)}
+                {formData.image && (<img src={formData.image} alt ='portfolio LandingPage'></img>)}
             </div>
             <button type='submit'>Submit</button>
         </form>
