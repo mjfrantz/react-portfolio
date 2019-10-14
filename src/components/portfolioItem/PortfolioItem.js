@@ -6,7 +6,8 @@ import {
     PortfolioDescription,
     PortfolioSummary,
     PortfolioGithub,
-    PortfolioWebsite,
+		PortfolioWebsite,
+		PortfolioWrapper,
 		ModalButton,
 		ModalDiv
 } from './PortfolioItemSytles';
@@ -15,6 +16,7 @@ import Modal from "../../components/Modal";
 
 const PortfolioItem = ({ id, title, description, summary, githubLink, websiteLink, image }) => {
     return (
+			<PortfolioWrapper>
         <PortfolioCardContainer>
             <ToggleContent
                 toggle={show => <PortfolioImage src={image} alt='item' onClick={show}/>}
@@ -25,14 +27,15 @@ const PortfolioItem = ({ id, title, description, summary, githubLink, websiteLin
                             <PortfolioTitle>{title}</PortfolioTitle>
                             <PortfolioDescription>{description}</PortfolioDescription>
                             <PortfolioSummary>Made with: {summary}</PortfolioSummary>
-                            <PortfolioGithub href={githubLink}> {githubLink}</PortfolioGithub>
-                            <PortfolioWebsite href={websiteLink}> {websiteLink}</PortfolioWebsite>
+                            <PortfolioGithub href={githubLink}> Visit Site</PortfolioGithub>
+                            <PortfolioWebsite href={websiteLink}> Github</PortfolioWebsite>
                             <ModalButton onClick={hide}>&times;</ModalButton>
                         </ModalDiv>
                     </Modal>
                 )}
                 />
         </PortfolioCardContainer>
+			</PortfolioWrapper>
     );
 };
 

@@ -37,7 +37,7 @@ const GlobalStyle = createGlobalStyle`
         border: 1px solid grey;
         width: 50%;
         padding: 10px;
-        border-radius: 20px;
+        border-radius: 0px;
       }
     }
 `
