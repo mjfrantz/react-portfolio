@@ -22,20 +22,37 @@ export const PortfolioGithub = styled.a`
     background-color: #1B242D;
     color: #FFF
     font-size: 1em;
-    margin: 1em;
+    // margin: 1em;
     padding: 0.25em 1em;
     border: 2px solid #1B242D;
     border-radius: 3px;
     text-decoration: none;
-    display: space-between;`
+    // display: space-between;
+    align:left;
+
+    &:hover,
+    &:focus {
+    background-color: #FFF;
+    color: #1B242D;
+    text-decoration: none;
+    cursor: pointer;
+    `
 export const PortfolioWebsite = styled.a`background-color: #1B242D;
     color: #FFF
     font-size: 1em;
-    margin: 1em;
+    margin-left: 0.5em;
     padding: 0.25em 1em;
     border: 2px solid #1B242D;
     border-radius: 3px;
-    text-decoration: none;`
+    text-decoration: none;
+    
+    &:hover,
+    &:focus {
+    background-color: #FFF;
+    color: #1B242D;
+    text-decoration: none;
+    cursor: pointer;`
+
 export const PortfolioImage = styled.img`
     width: 100%;
  `;

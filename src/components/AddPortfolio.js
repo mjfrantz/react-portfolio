@@ -55,11 +55,11 @@ const AddPortfolio = () => {
         <form onSubmit={handleSubmit}>
             <div>
                 <h1>Add Portfolio</h1>
-                <input type="text" name='title' value={formData.title} placeholder="My Portfolio" onChange={handleChange}/>
-                <input type="text" name='description' value={formData.description} placeholder="My Portfolio" onChange={handleChange}/>
-                <input type="text" name='summary' value={formData.summary} placeholder="My Portfolio" onChange={handleChange}/>
-                <input type="text" name='githubLink' value={formData.githubLink} placeholder="My Portfolio" onChange={handleChange}/>
-                <input type="text" name='websiteLink' value={formData.websiteLink} placeholder="My Portfolio" onChange={handleChange}/> 
+                <input type="text" name='title' value={formData.title} placeholder="Title" onChange={handleChange}/>
+                <input type="text" name='description' value={formData.description} placeholder="Description" onChange={handleChange}/>
+                <input type="text" name='summary' value={formData.summary} placeholder="Summary" onChange={handleChange}/>
+                <input type="text" name='githubLink' value={formData.githubLink} placeholder="Github" onChange={handleChange}/>
+                <input type="text" name='websiteLink' value={formData.websiteLink} placeholder="Website Link" onChange={handleChange}/> 
                 <input type='file' name='image' onChange={handleFile}/>
                 {formData.image && (<img src={formData.image} alt ='portfolio LandingPage'></img>)}
             </div>
